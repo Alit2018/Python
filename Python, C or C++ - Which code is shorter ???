@@ -1,0 +1,45 @@
+
+#include <iostream>
+Using namespace stud;
+int main() {
+   int a,b,c;
+   court«“Enter two numbers to multiply/n”;
+   cin »a »b;
+   c = a +b;
+   cout«“The multiplication of your                    
+                  numbers is: «c«“\n”;
+   return 0;
+_____ in c++
+
+#include<stud.h>
+int main() {
+ int a, b, c;
+ printf(“\nEnter Teo numbers to multiply? “);
+ scanf(“%d %d”, &a, &b);
+ c = a* b;
+ printf(“The multiplication of your numbers
+             is  : %d\n”, c);
+ return 0;
+}
+
+_____ in c
+
+num1=int(input(“Enter first number: “))
+num2=int(input(“Enter the second number            
+   to multiply: “))
+num3=num1*num2
+print(“The multiplication of your numbers
+   is “, num3)
+
+_____ in Python Version1
+   
+x,y=[int(x) for x in input(“Enter two numbers
+ to multiply, separated by a space: “).split()]
+print(x*y)
+
+_______ in Python version 2 - in two lines using the list comprehension by reading two numbers and casting them in int
+
+x,y=map(int(input(“Enter two numbers /separated by a space: “).split())
+print(x,y)
+
+________ in Python version 3 : map function that takes input and casts into int. Need split() .
