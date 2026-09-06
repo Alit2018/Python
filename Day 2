@@ -1,0 +1,22 @@
+print("Hello, Friends!")
+
+def say_hello(name):
+    print ("Hello", name)
+
+def average(a, b, c): 
+    return (a + b + c) / 3 
+
+def alansum(x, y):  
+    return (x + y)  
+
+
+say_hello("Dan")
+say_hello("Alan")
+say_hello("Sarah")
+
+result = average(80, 90, 70)
+alansumresult = alansum(5, 5) + 7
+
+
+print("The average between 80.90 and 70 is", result)
+print("The sum of 5 + 5 + 7 is ", alansumresult)
