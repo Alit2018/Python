@@ -7,7 +7,7 @@ print("Your age is", age)
 print("The price is", price)
 
 
-in JAVA:
+#in JAVA:
 import java.util.Scanner;
 
 public class Main {
