@@ -68,3 +68,8 @@ System.out.println("name: " + name);
 System.out.println("age" + age);
 
 System.out.println("price" + price);
+
+
+Input doesn't necessarily mean keyboard input. 
+A program can receive input from another program, a function argument, 
+a file, network data, etc.
