@@ -1,0 +1,31 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+price = float(input("Enter the price: "))
+
+print("Your name is", name)
+print("Your age is", age)
+print("The price is", price)
+
+
+in JAVA:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner inputIn = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = inputIn.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = inputIn.nextInt();
+
+        System.out.print("Enter the price: ");
+        double price = inputIn.nextDouble();
+
+        System.out.println("Your name is " + name);
+        System.out.println("Your age is " + age);
+        System.out.println("The price is " + price);
+    }
+}
