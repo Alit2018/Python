@@ -29,3 +29,42 @@ public class Main {
         System.out.println("The price is " + price);
     }
 }
+
+# Comparing:
+#one way
+
+name = input("Enter your name: ")
+
+age = int(input("Enter your age: "))
+
+price = float(input("Enter your price: "))
+
+print("Your name is ", name)
+
+print("Your age is ", age)
+
+print("Your price is", price)
+
+
+
+//the classy way :)
+
+Scanner InputIn = new Scanner (System.in);
+
+System.out.println("Enter your name: ");
+
+Strig name = Inputin.nextLine();
+
+System.out.println("Enter your gae: ");
+
+int age = Inputin. nextInt();
+
+System.out.printlm("Enter your price: ");
+
+double price = Inputin.nextDouble();
+
+System.out.println("name: " + name);
+
+System.out.println("age" + age);
+
+System.out.println("price" + price);
