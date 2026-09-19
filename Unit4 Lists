@@ -1,0 +1,11 @@
+passwords = ['cat','dog','frog','bird'];
+#print(passwords[0])
+passwords.append('rabit')
+passwords.pop()
+passwords.remove('cat')
+for password in passwords: #passwords list
+    print(password) 
+
+ports = [22,80,443,8080]
+for port in ports:
+    print(f"Scaning ports {port}")
