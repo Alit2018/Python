@@ -1,0 +1,15 @@
+#while is the most common way to express an indefinite loop in Python. 
+#A for loop can also be infinite when its iterable never runs out of values. 
+#An infinite loop can be intentional or caused by a programming mistake.
+
+
+count = 0
+
+while True:
+    print("Hello hello")
+    count += 1
+
+    if count == 5:
+        break
+
+print("You were greated 5 times")
