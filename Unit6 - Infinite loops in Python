@@ -1,0 +1,215 @@
+
+
+# INFINITE LOOP EXAMPLES IN PYTHON - 10 Different Examples
+
+
+from itertools import count, cycle, repeat
+
+
+# --------------------------------------------
+# EXAMPLE 1: INFINITE WHILE TRUE LOOP
+# --------------------------------------------
+# while True always evaluates to True.
+# Without break, this loop would run forever.
+# Here, break stops it after 5 repetitions.
+
+print("\nEXAMPLE 1: while True")
+
+counter = 0
+
+while True:
+    print("Hello")
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 2: INFINITE WHILE 1 LOOP
+# --------------------------------------------
+# Python treats the integer 1 as True.
+# Therefore, while 1 behaves like while True.
+# The break statement stops the loop.
+
+print("\nEXAMPLE 2: while 1")
+
+counter = 0
+
+while 1:
+    print("Hello")
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 3: COUNTER NEVER CHANGES
+# --------------------------------------------
+# The condition i < 5 remains True because
+# i never increases.
+# This is a common programming mistake.
+# A separate counter allows us to stop it.
+
+print("\nEXAMPLE 3: Counter never changes")
+
+i = 0
+counter = 0
+
+while i < 5:
+    print("Hello")
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 4: INCORRECT COUNTER DIRECTION
+# --------------------------------------------
+# i starts at 1 and decreases.
+# Since i is always <= 5, the condition
+# never becomes False.
+# This demonstrates a logic error.
+
+print("\nEXAMPLE 4: Wrong counter direction")
+
+i = 1
+counter = 0
+
+while i <= 5:
+    print("Hello")
+    i -= 1
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 5: BOOLEAN-CONTROLLED WHILE LOOP
+# --------------------------------------------
+# A Boolean variable controls the loop.
+# If running always stays True, the loop
+# continues indefinitely.
+# This pattern is useful in servers and games.
+
+print("\nEXAMPLE 5: Boolean-controlled loop")
+
+running = True
+counter = 0
+
+while running:
+    print("Hello")
+    counter += 1
+
+    if counter == 5:
+        running = False
+
+
+# --------------------------------------------
+# EXAMPLE 6: INFINITE FOR LOOP USING COUNT
+# --------------------------------------------
+# itertools.count() generates numbers:
+# 0, 1, 2, 3, 4, 5, ...
+# It has no predetermined endpoint.
+# break stops the loop after 5 iterations.
+
+print("\nEXAMPLE 6: itertools.count()")
+
+for i in count():
+    print("Hello", i)
+
+    if i == 4:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 7: INFINITE FOR LOOP USING CYCLE
+# --------------------------------------------
+# itertools.cycle() repeatedly cycles through
+# the elements of a sequence.
+# Dog, Cat, Bird, Dog, Cat, Bird, ...
+# Without break, it continues indefinitely.
+
+print("\nEXAMPLE 7: itertools.cycle()")
+
+counter = 0
+
+for animal in cycle(["Dog", "Cat", "Bird"]):
+    print(animal)
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 8: INFINITE FOR LOOP USING REPEAT
+# --------------------------------------------
+# itertools.repeat() repeats the same value.
+# Without a repetition limit, the iterator
+# continues indefinitely.
+# break stops it after 5 repetitions.
+
+print("\nEXAMPLE 8: itertools.repeat()")
+
+counter = 0
+
+for word in repeat("Hello"):
+    print(word)
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 9: INFINITE LOOP USING ITER
+# --------------------------------------------
+# iter(function, sentinel) repeatedly calls
+# a function until it returns the sentinel.
+# This lambda always returns "Hello".
+# Because it never returns "STOP", the
+# iterator would continue indefinitely.
+
+print("\nEXAMPLE 9: iter() with sentinel")
+
+counter = 0
+
+for value in iter(lambda: "Hello", "STOP"):
+    print(value)
+    counter += 1
+
+    if counter == 5:
+        break
+
+
+# --------------------------------------------
+# EXAMPLE 10: RECURSION
+# --------------------------------------------
+# Recursion occurs when a function calls itself.
+# Without a stopping condition, Python eventually
+# raises a RecursionError.
+# This is NOT technically a loop.
+# We use a base case to stop after 5 calls.
+
+print("\nEXAMPLE 10: Recursion")
+
+def say_hello(n):
+    if n == 0:
+        return
+
+    print("Hello")
+    say_hello(n - 1)
+
+
+say_hello(5)
+
+
+# --------------------------------------------
+# END OF PROGRAM
+# --------------------------------------------
+
+print("\nAll 10 examples completed successfully!")
