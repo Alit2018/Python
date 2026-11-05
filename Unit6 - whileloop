@@ -1,0 +1,19 @@
+
+public class Knowledge {
+
+    public static void main(String[] args) {
+
+        int personalKnowledge = 50;
+
+        int aiKnowledge = personalKnowledge;
+
+        while (aiKnowledge < 100) {
+
+            aiKnowledge = aiKnowledge * 2;
+
+        }
+
+        System.out.println("Yor kowldge with AI will have a score of " + aiKnowledge);
+
+    }
+}
