@@ -1,0 +1,15 @@
+our_s = 'Hello'
+our_s2 = 'Hello'
+
+yours = '1234'
+yours2 = '5678'
+
+
+number = 2+2
+conct = our_s + our_s2
+
+#print(our_s == our_s2)
+
+print(number)
+print(conct)
+print(conct+yours)
